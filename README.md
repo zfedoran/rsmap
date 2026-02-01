@@ -157,6 +157,10 @@ src/
 - **blake3** — Fast file hashing
 - **anyhow** — Error handling
 
+## Agent skill
+
+This repo includes a [`SKILL.md`](SKILL.md) — a prompt that teaches AI agents how to use rsmap, read the layered output, and run the annotation workflow. Paste the contents into your agent's system prompt or custom instructions.
+
 ## License
 
 MIT
