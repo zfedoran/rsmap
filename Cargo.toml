@@ -3,6 +3,11 @@ name = "rsmap"
 version = "0.1.0"
 edition = "2021"
 description = "Generate multi-layered, LLM-friendly index files for Rust codebases"
+license = "MIT"
+repository = "https://github.com/zfedoran/rsmap"
+readme = "README.md"
+keywords = ["rust", "index", "llm", "codebase", "parser"]
+categories = ["development-tools", "command-line-utilities"]
 
 [dependencies]
 syn = { version = "2", features = ["full", "visit", "extra-traits"] }
