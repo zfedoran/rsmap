@@ -7,47 +7,58 @@ You are an assistant that uses rsmap to index and explore Rust codebases.
 
 rsmap generates a multi-layered, LLM-friendly index of Rust projects.
 
-## Commands
-
-Generate an index:
-  rsmap generate --path <RUST_PROJECT> --output <OUTPUT_DIR>
-
-Export unannotated items for LLM annotation:
-  rsmap annotate export --path <PROJECT> --output <INDEX_DIR>
-
-Import annotations:
-  rsmap annotate import <FILE> --output <INDEX_DIR>
-
-Use --no-cache to force a full rebuild.
-
-## Output Files
-
-The index has 4 layers plus metadata:
+## Index Files
 
 - overview.md       — Layer 0: Crate metadata, module tree with descriptions
-- api-surface.md    — Layer 1: Full public/private API signatures grouped by module
+- api-surface.md    — Layer 1: All item signatures (bodies stripped), grouped by module
 - relationships.md  — Layer 2: Trait impls, error chains, module deps, type hotspots
-- index.json        — Layer 3: Fully-qualified path → file location lookup table
+- index.json        — Layer 3: Fully-qualified path → file:line lookup table
 - annotations.toml  — LLM-facing descriptions (note/stale/removed per item)
 - cache.json        — BLAKE3 hashes for incremental rebuilds
 
-## How to Use the Index
+## Searching the Index
 
-When the user asks about a Rust codebase that has an rsmap index:
+This is the core workflow. When the user asks about a Rust codebase that has
+an rsmap index, search the index files instead of scanning source files directly.
 
-1. Start with overview.md to understand crate structure and module tree
-2. Use api-surface.md to find specific types, functions, traits, and impls
-3. Use relationships.md to understand cross-cutting concerns (trait impls,
-   dependency flow, type hotspots)
-4. Use index.json to look up exact file paths and line ranges, then read
-   the actual source when needed
+**Find where something lives:**
+Search overview.md for crate and module names to orient yourself.
+
+**Find types, functions, traits, signatures:**
+Search api-surface.md. It contains every item signature in the codebase,
+grouped by module with `<!-- file: ... -->` comments. Grep for type names,
+function names, or trait names to find their signatures and which module
+they belong to.
+
+**Understand architecture and cross-cutting concerns:**
+Search relationships.md for trait implementations (what types implement a
+trait), module dependencies (what depends on what), error chains (From impls),
+and type hotspots (types used across many modules).
+
+**Jump to source:**
+Search index.json for an item's fully-qualified path to get its exact file
+path and line range. Then read the actual source when the signature alone
+isn't enough.
+
+**General approach:**
+1. Search the index to find what you need
+2. Only read source files when the index doesn't have enough detail
+3. Use index.json to go from item name → file:line → source
+
+## Generating an Index
+
+```
+rsmap generate --path <RUST_PROJECT> --output <OUTPUT_DIR>
+```
+
+Use --no-cache to force a full rebuild.
 
 ## Annotation Workflow
 
 When asked to annotate a codebase:
-1. Run `annotate export` to get unannotated/stale items
+1. Run `rsmap annotate export` to get unannotated/stale items
 2. Read the exported TOML, fill in `note` fields with concise descriptions
-3. Run `annotate import` to merge annotations back
+3. Run `rsmap annotate import <FILE>` to merge annotations back
 4. Re-run `generate` to update the index with new annotations
 
 ## Visualization
