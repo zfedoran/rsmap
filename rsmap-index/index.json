@@ -1,0 +1,583 @@
+{
+  "crate::AnnotateAction": {
+    "file": "src/main.rs",
+    "line_start": 61,
+    "line_end": 82,
+    "kind": "enum",
+    "visibility": "private"
+  },
+  "crate::Cli": {
+    "file": "src/main.rs",
+    "line_start": 31,
+    "line_end": 34,
+    "kind": "struct",
+    "visibility": "private"
+  },
+  "crate::Commands": {
+    "file": "src/main.rs",
+    "line_start": 37,
+    "line_end": 58,
+    "kind": "enum",
+    "visibility": "private"
+  },
+  "crate::annotations::AnnotationEntry": {
+    "file": "src/annotations.rs",
+    "line_start": 22,
+    "line_end": 29,
+    "kind": "struct",
+    "visibility": "pub"
+  },
+  "crate::annotations::AnnotationStore": {
+    "file": "src/annotations.rs",
+    "line_start": 14,
+    "line_end": 19,
+    "kind": "struct",
+    "visibility": "pub"
+  },
+  "crate::annotations::collect_paths": {
+    "file": "src/annotations.rs",
+    "line_start": 153,
+    "line_end": 168,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::annotations::export_for_annotation": {
+    "file": "src/annotations.rs",
+    "line_start": 171,
+    "line_end": 213,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::annotations::impl AnnotationStore": {
+    "file": "src/annotations.rs",
+    "line_start": 35,
+    "line_end": 59,
+    "kind": "impl AnnotationStore",
+    "visibility": "private"
+  },
+  "crate::annotations::import_annotations": {
+    "file": "src/annotations.rs",
+    "line_start": 216,
+    "line_end": 241,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::annotations::is_false": {
+    "file": "src/annotations.rs",
+    "line_start": 31,
+    "line_end": 33,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::annotations::update_annotations": {
+    "file": "src/annotations.rs",
+    "line_start": 66,
+    "line_end": 151,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::cache::Cache": {
+    "file": "src/cache.rs",
+    "line_start": 13,
+    "line_end": 22,
+    "kind": "struct",
+    "visibility": "pub"
+  },
+  "crate::cache::CacheFileEntry": {
+    "file": "src/cache.rs",
+    "line_start": 25,
+    "line_end": 28,
+    "kind": "struct",
+    "visibility": "pub"
+  },
+  "crate::cache::collect_hashes": {
+    "file": "src/cache.rs",
+    "line_start": 89,
+    "line_end": 111,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::cache::impl Cache": {
+    "file": "src/cache.rs",
+    "line_start": 30,
+    "line_end": 87,
+    "kind": "impl Cache",
+    "visibility": "private"
+  },
+  "crate::layer0::generate_overview": {
+    "file": "src/layer0.rs",
+    "line_start": 8,
+    "line_end": 33,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::layer0::get_module_description": {
+    "file": "src/layer0.rs",
+    "line_start": 55,
+    "line_end": 75,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer0::write_module_tree": {
+    "file": "src/layer0.rs",
+    "line_start": 35,
+    "line_end": 49,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer1::format_impl_header": {
+    "file": "src/layer1.rs",
+    "line_start": 158,
+    "line_end": 170,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer1::generate_api_surface": {
+    "file": "src/layer1.rs",
+    "line_start": 7,
+    "line_end": 19,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::layer1::write_item": {
+    "file": "src/layer1.rs",
+    "line_start": 138,
+    "line_end": 156,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer1::write_module_surface": {
+    "file": "src/layer1.rs",
+    "line_start": 21,
+    "line_end": 136,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer2::build_error_chains": {
+    "file": "src/layer2.rs",
+    "line_start": 210,
+    "line_end": 246,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer2::clean_type_name": {
+    "file": "src/layer2.rs",
+    "line_start": 182,
+    "line_end": 193,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer2::collect_relationships": {
+    "file": "src/layer2.rs",
+    "line_start": 113,
+    "line_end": 179,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer2::extract_from_source": {
+    "file": "src/layer2.rs",
+    "line_start": 196,
+    "line_end": 207,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer2::extract_internal_module_dep": {
+    "file": "src/layer2.rs",
+    "line_start": 285,
+    "line_end": 323,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer2::extract_type_names_from_signature": {
+    "file": "src/layer2.rs",
+    "line_start": 326,
+    "line_end": 342,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer2::follow_chain": {
+    "file": "src/layer2.rs",
+    "line_start": 249,
+    "line_end": 282,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer2::generate_relationships": {
+    "file": "src/layer2.rs",
+    "line_start": 9,
+    "line_end": 111,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::layer2::is_keyword": {
+    "file": "src/layer2.rs",
+    "line_start": 344,
+    "line_end": 351,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer3::IndexEntry": {
+    "file": "src/layer3.rs",
+    "line_start": 8,
+    "line_end": 14,
+    "kind": "struct",
+    "visibility": "private"
+  },
+  "crate::layer3::collect_index_entries": {
+    "file": "src/layer3.rs",
+    "line_start": 30,
+    "line_end": 77,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::layer3::generate_index": {
+    "file": "src/layer3.rs",
+    "line_start": 20,
+    "line_end": 28,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::layer3::item_full_path": {
+    "file": "src/layer3.rs",
+    "line_start": 79,
+    "line_end": 93,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::main": {
+    "file": "src/main.rs",
+    "line_start": 84,
+    "line_end": 98,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::metadata::CrateMetadata": {
+    "file": "src/metadata.rs",
+    "line_start": 8,
+    "line_end": 16,
+    "kind": "struct",
+    "visibility": "pub"
+  },
+  "crate::metadata::convert_visibility": {
+    "file": "src/metadata.rs",
+    "line_start": 92,
+    "line_end": 108,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::metadata::resolve_crates": {
+    "file": "src/metadata.rs",
+    "line_start": 19,
+    "line_end": 89,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::model::CrateInfo": {
+    "file": "src/model.rs",
+    "line_start": 5,
+    "line_end": 12,
+    "kind": "struct",
+    "visibility": "pub"
+  },
+  "crate::model::CrateKind": {
+    "file": "src/model.rs",
+    "line_start": 15,
+    "line_end": 19,
+    "kind": "enum",
+    "visibility": "pub"
+  },
+  "crate::model::Item": {
+    "file": "src/model.rs",
+    "line_start": 48,
+    "line_end": 60,
+    "kind": "struct",
+    "visibility": "pub"
+  },
+  "crate::model::ItemKind": {
+    "file": "src/model.rs",
+    "line_start": 63,
+    "line_end": 78,
+    "kind": "enum",
+    "visibility": "pub"
+  },
+  "crate::model::Module": {
+    "file": "src/model.rs",
+    "line_start": 32,
+    "line_end": 45,
+    "kind": "struct",
+    "visibility": "pub"
+  },
+  "crate::model::Visibility": {
+    "file": "src/model.rs",
+    "line_start": 107,
+    "line_end": 112,
+    "kind": "enum",
+    "visibility": "pub"
+  },
+  "crate::model::impl Module": {
+    "file": "src/model.rs",
+    "line_start": 137,
+    "line_end": 160,
+    "kind": "impl Module",
+    "visibility": "private"
+  },
+  "crate::model::impl Visibility": {
+    "file": "src/model.rs",
+    "line_start": 125,
+    "line_end": 135,
+    "kind": "impl Visibility",
+    "visibility": "private"
+  },
+  "crate::model::impl std :: fmt :: Display for CrateKind": {
+    "file": "src/model.rs",
+    "line_start": 21,
+    "line_end": 29,
+    "kind": "impl std :: fmt :: Display for CrateKind",
+    "visibility": "private"
+  },
+  "crate::model::impl std :: fmt :: Display for ItemKind": {
+    "file": "src/model.rs",
+    "line_start": 80,
+    "line_end": 104,
+    "kind": "impl std :: fmt :: Display for ItemKind",
+    "visibility": "private"
+  },
+  "crate::model::impl std :: fmt :: Display for Visibility": {
+    "file": "src/model.rs",
+    "line_start": 114,
+    "line_end": 123,
+    "kind": "impl std :: fmt :: Display for Visibility",
+    "visibility": "private"
+  },
+  "crate::output::code_block": {
+    "file": "src/output.rs",
+    "line_start": 44,
+    "line_end": 46,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::output::display_module_path": {
+    "file": "src/output.rs",
+    "line_start": 30,
+    "line_end": 32,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::output::indent": {
+    "file": "src/output.rs",
+    "line_start": 4,
+    "line_end": 16,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::output::tree_entry": {
+    "file": "src/output.rs",
+    "line_start": 19,
+    "line_end": 27,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::output::truncate": {
+    "file": "src/output.rs",
+    "line_start": 35,
+    "line_end": 41,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::parse::collect_use_paths": {
+    "file": "src/parse.rs",
+    "line_start": 762,
+    "line_end": 783,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::collect_use_tree_paths": {
+    "file": "src/parse.rs",
+    "line_start": 785,
+    "line_end": 825,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::enum_signature": {
+    "file": "src/parse.rs",
+    "line_start": 415,
+    "line_end": 461,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::extract_doc_comment": {
+    "file": "src/parse.rs",
+    "line_start": 21,
+    "line_end": 53,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::parse::extract_inner_doc_comment": {
+    "file": "src/parse.rs",
+    "line_start": 56,
+    "line_end": 90,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::parse::extract_items": {
+    "file": "src/parse.rs",
+    "line_start": 92,
+    "line_end": 294,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::fn_signature": {
+    "file": "src/parse.rs",
+    "line_start": 297,
+    "line_end": 351,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::hash_file_contents": {
+    "file": "src/parse.rs",
+    "line_start": 746,
+    "line_end": 748,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::parse::hash_item_source": {
+    "file": "src/parse.rs",
+    "line_start": 737,
+    "line_end": 743,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::impl_method_signature": {
+    "file": "src/parse.rs",
+    "line_start": 638,
+    "line_end": 679,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::impl_signature": {
+    "file": "src/parse.rs",
+    "line_start": 576,
+    "line_end": 636,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::parse_file": {
+    "file": "src/parse.rs",
+    "line_start": 11,
+    "line_end": 18,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::parse::parse_use_statements": {
+    "file": "src/parse.rs",
+    "line_start": 751,
+    "line_end": 760,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::parse::span_lines": {
+    "file": "src/parse.rs",
+    "line_start": 713,
+    "line_end": 735,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::struct_signature": {
+    "file": "src/parse.rs",
+    "line_start": 354,
+    "line_end": 412,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::trait_method_signature": {
+    "file": "src/parse.rs",
+    "line_start": 534,
+    "line_end": 573,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::trait_signature": {
+    "file": "src/parse.rs",
+    "line_start": 464,
+    "line_end": 532,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::use_tree_name": {
+    "file": "src/parse.rs",
+    "line_start": 699,
+    "line_end": 709,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::parse::visibility_prefix": {
+    "file": "src/parse.rs",
+    "line_start": 681,
+    "line_end": 697,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::resolve::extract_inline_module_items": {
+    "file": "src/resolve.rs",
+    "line_start": 174,
+    "line_end": 190,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::resolve::get_path_attribute": {
+    "file": "src/resolve.rs",
+    "line_start": 237,
+    "line_end": 252,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::resolve::is_cfg_test": {
+    "file": "src/resolve.rs",
+    "line_start": 222,
+    "line_end": 234,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::resolve::resolve_mod_file": {
+    "file": "src/resolve.rs",
+    "line_start": 193,
+    "line_end": 219,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::resolve::resolve_module_tree": {
+    "file": "src/resolve.rs",
+    "line_start": 11,
+    "line_end": 60,
+    "kind": "function",
+    "visibility": "pub"
+  },
+  "crate::resolve::resolve_submodules": {
+    "file": "src/resolve.rs",
+    "line_start": 62,
+    "line_end": 171,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::run_annotate_export": {
+    "file": "src/main.rs",
+    "line_start": 212,
+    "line_end": 229,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::run_annotate_import": {
+    "file": "src/main.rs",
+    "line_start": 231,
+    "line_end": 254,
+    "kind": "function",
+    "visibility": "private"
+  },
+  "crate::run_generate": {
+    "file": "src/main.rs",
+    "line_start": 100,
+    "line_end": 210,
+    "kind": "function",
+    "visibility": "private"
+  }
+}

@@ -63,78 +63,59 @@ rsmap annotate import annotated.toml
 
 Annotations are merged into `annotations.toml` and appear inline in Layer 0 and Layer 1 outputs on the next `generate`.
 
-## Output layers
+## Example output (rsmap run on itself)
 
-### Layer 0 — Overview (`overview.md`)
+See the full output in [`rsmap-index/`](rsmap-index/).
+
+### Overview (`overview.md`)
 
 ```markdown
-# Crate: my_app (bin)
+# Crate: rsmap (bin)
 Edition: 2021
 Version: 0.1.0
-External deps: tokio, serde, sqlx, tracing, clap
+External deps: anyhow, blake3, cargo_metadata, chrono, clap, proc-macro2, quote, serde, serde_json, syn, toml, walkdir
 
 ## Module Tree
-- crate — Main entry point, CLI setup
-  - config — CLI args, env parsing, config file loading
-  - db — Database connection pool setup
-    - models — Row types and query builders
-  - engine — Core business logic
-    - eval — Expression evaluator
+- crate
+  - annotations
+  - cache
+  - layer0
+  - layer1
+  - layer2
+  - layer3
+  - metadata
+  - model
+  - output
+  - parse
+  - resolve
 ```
 
-### Layer 1 — API Surface (`api-surface.md`)
-
-All items (pub and private), grouped by module, signatures only:
-
-```markdown
-# crate::engine::eval
-<!-- file: src/engine/eval.rs -->
-
-## Types
-
-pub struct EvalContext<'a> {
-    pub scope: &'a Scope,
-    pub depth: usize,
-    max_depth: usize,
-}
-
-## Functions
-
-pub fn evaluate(expr: &Expr, ctx: &mut EvalContext) -> Result<Value, EvalError>;
-fn resolve_name(name: &str, scope: &Scope) -> Option<Value>;
-```
-
-### Layer 2 — Relationships (`relationships.md`)
+### Relationships (`relationships.md`)
 
 ```markdown
 ## Trait Implementations
-Evaluable <- Expr, LiteralExpr, BinaryExpr
-Display   <- Value, EvalError, ApiError
-
-## Error Chains
-EvalError -> EngineError -> ApiError
+std :: fmt :: Display <- CrateKind, ItemKind, Visibility
 
 ## Module Dependencies
-api          -> engine, db, config
-engine::eval -> engine::plan, db::models
+annotations -> cache, model
+cache       -> model
+layer0      -> annotations, model, output
+layer1      -> annotations, model
+layer2      -> model
+layer3      -> model
+metadata    -> model
+parse       -> metadata, model
+resolve     -> cache, metadata, model, parse
 
 ## Key Types (referenced from 3+ modules)
-Value       — used in 8 modules
-EvalContext  — used in 5 modules
-```
-
-### Layer 3 — JSON Index (`index.json`)
-
-```json
-{
-  "crate::engine::eval::EvalContext": {
-    "file": "src/engine/eval.rs",
-    "line_start": 15,
-    "line_end": 42,
-    "kind": "struct",
-    "visibility": "pub"
-  }
-}
+Module          — used in 8 modules
+CrateInfo       — used in 7 modules
+Item            — used in 5 modules
+Path            — used in 5 modules
+PathBuf         — used in 4 modules
+AnnotationStore — used in 3 modules
+Cache           — used in 3 modules
+Visibility      — used in 3 modules
 ```
 
 ## Incremental rebuilds

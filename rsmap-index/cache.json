@@ -1,0 +1,147 @@
+{
+  "files": {
+    "src/annotations.rs": {
+      "hash": "2048e33302fb98985ef5df9cfffd2767460b3381ba9f6d191e445553aa01dca4",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/cache.rs": {
+      "hash": "19599cf37fd0c8f1388b1ac312051ca5edd312acacd9a7fa01e1806c7dad32c0",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/layer0.rs": {
+      "hash": "14fed1da9cd6a4b23e73869b55d1b3580ff4f94bbe2539bd0bf7f5ee63c3eb8b",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/layer1.rs": {
+      "hash": "7cc279159bf11615ac7a14072fd047045ea970b19f04b3b589b18ff7cdb70f1c",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/layer2.rs": {
+      "hash": "a30eba6cc10fdde8cf0fefc74e60b8d0a4bbe37b0a06d1dbaacef8d71b6467f6",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/layer3.rs": {
+      "hash": "50835f1ea3d14b03abf420733b0e3d05c4714471ebaf29d654075fdf1325b26e",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/main.rs": {
+      "hash": "1b33c81b7f443a5f7c9b850ec65fc4c0944334ca7e1394461c2af1b5a5852467",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/metadata.rs": {
+      "hash": "c148b77b9a908f10bd52de70c84e9d3c340bc8b459a7caddfd2ecbde89fbd69b",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/model.rs": {
+      "hash": "0838342f9c370774385af5f5e9e2480af9e74e8c59d38322cd9ec6577e9e8bbd",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/output.rs": {
+      "hash": "dd2b5f914d6e150fe2f26173c862fe3fc95afb0b3e8fe6a6e2a2dabf041d5805",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/parse.rs": {
+      "hash": "41cec48b6590c4809ff2cac783ff07fe6a1be491f0f044b50c3fcf112ac9e683",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    },
+    "src/resolve.rs": {
+      "hash": "fe46abb5a1422f7dbefa9a00b95f345712652e6583aa99a9a2d810e46ecd3ec5",
+      "last_indexed": "2026-02-01T01:31:35.312266+00:00"
+    }
+  },
+  "modules": {
+    "crate": "1b33c81b7f443a5f7c9b850ec65fc4c0944334ca7e1394461c2af1b5a5852467",
+    "crate::annotations": "2048e33302fb98985ef5df9cfffd2767460b3381ba9f6d191e445553aa01dca4",
+    "crate::cache": "19599cf37fd0c8f1388b1ac312051ca5edd312acacd9a7fa01e1806c7dad32c0",
+    "crate::layer0": "14fed1da9cd6a4b23e73869b55d1b3580ff4f94bbe2539bd0bf7f5ee63c3eb8b",
+    "crate::layer1": "7cc279159bf11615ac7a14072fd047045ea970b19f04b3b589b18ff7cdb70f1c",
+    "crate::layer2": "a30eba6cc10fdde8cf0fefc74e60b8d0a4bbe37b0a06d1dbaacef8d71b6467f6",
+    "crate::layer3": "50835f1ea3d14b03abf420733b0e3d05c4714471ebaf29d654075fdf1325b26e",
+    "crate::metadata": "c148b77b9a908f10bd52de70c84e9d3c340bc8b459a7caddfd2ecbde89fbd69b",
+    "crate::model": "0838342f9c370774385af5f5e9e2480af9e74e8c59d38322cd9ec6577e9e8bbd",
+    "crate::output": "dd2b5f914d6e150fe2f26173c862fe3fc95afb0b3e8fe6a6e2a2dabf041d5805",
+    "crate::parse": "41cec48b6590c4809ff2cac783ff07fe6a1be491f0f044b50c3fcf112ac9e683",
+    "crate::resolve": "fe46abb5a1422f7dbefa9a00b95f345712652e6583aa99a9a2d810e46ecd3ec5"
+  },
+  "items": {
+    "crate::AnnotateAction": "b2f613a940344f8c2a94ff25ed17c41c2f1353e4809f1002ddfe5948163c520a",
+    "crate::Cli": "5befd774f90f7710761145f193816d7d08f22a4528d8046063ce8a66ebf6a383",
+    "crate::Commands": "fd5187959dc77a6dfc21c2b9525a99746457878a13bc3c79c517e388482fb9f3",
+    "crate::annotations::AnnotationEntry": "2333882e69f0d323d2209ee387d79e127ddf30013d4ae0f357a089ef1002831e",
+    "crate::annotations::AnnotationStore": "3f2db6f8e0e4377926395d71a611f4e932eb16b099162107c9e5782faf9e00b2",
+    "crate::annotations::collect_paths": "f45aa334da9fe5245b2a366e3eaa6928347adf4cf21cb0f5f4b31b06833d31f9",
+    "crate::annotations::export_for_annotation": "4bfee7e205d04e9fca9c34083fca9c66c1ff278acda12a5efa9e73cc947e2744",
+    "crate::annotations::import_annotations": "337b5a6b8536fa095bea34ac1e087287d8f97c5fd2d0a3ad0b2c6f5f2b5d69c9",
+    "crate::annotations::is_false": "c268fd4b6371d206310cbd53d3d1c886d1959c4a710141fbb71236dd6d5d22d8",
+    "crate::annotations::update_annotations": "ba767474752ac8be1b02356fbe7067892abba016885c900c2559a08c7e941973",
+    "crate::cache::Cache": "0f8c191adb0ce87eff4fdf1495f898b7737a97e6b06b422c12f03667d9e80237",
+    "crate::cache::CacheFileEntry": "f0809e3dd20de4404fd9ff15ae2a7a17cd48c94f8e03c604b2ba08006c4c3299",
+    "crate::cache::collect_hashes": "c66c13c47e4d07b9569717b19354489a5e3bf080ba3dab4f107e1a3d4714b6ee",
+    "crate::layer0::generate_overview": "11da3f1250b7bc4f162af4bbbf5351a98bfff53cd225649c43855ecf40073636",
+    "crate::layer0::get_module_description": "aab97c0397929fe921a3bbeed76b0203b1a76a26314782facaefca6c98d3c45a",
+    "crate::layer0::write_module_tree": "1a68fad2b7639fdcd0644067ac028d410f1731b1f377bd88f2160c1d9cf2525a",
+    "crate::layer1::format_impl_header": "6689b04b87505771a30c353aff02409a8ff64c043e234f526f4f9557bbba22da",
+    "crate::layer1::generate_api_surface": "e444b6d4e4ebf45c9fbb2e2bc00d0bf780b1c2c621d9b48e84046a840cd99a82",
+    "crate::layer1::write_item": "e7d7eb654562bc58b2c869233863d1f2b4f9f80396ef43c2c5bb32f83bfb9388",
+    "crate::layer1::write_module_surface": "5c942394254de9a6403d02d2b866c39f7fd60718afc9ea1e54f8f309dfdd2d26",
+    "crate::layer2::build_error_chains": "adb778f06b0fe5954a5795cf1379f9013b8726d37e1770aad33b9212b8b00928",
+    "crate::layer2::clean_type_name": "0f8f8322f86d6247d779e1305ea32c41feec6624e6eb4af5d5a5f9fd62446348",
+    "crate::layer2::collect_relationships": "53f2098c98cc6b37a28045921c78c56a14f3d0240401a2eee60fc162cb1f47e1",
+    "crate::layer2::extract_from_source": "fcf00fd8602bc7e9f1c13b6f284f46cbf9131d2f645478ec11d7dbc5a1799a5f",
+    "crate::layer2::extract_internal_module_dep": "063a50eaf35f066d0c94449a14d78ba06d3f7896172952db94aba477d2af581e",
+    "crate::layer2::extract_type_names_from_signature": "b9e0e4121aae2dde1a0e025c053a57f852b0daa3d2981552e029eb0dcb3726d6",
+    "crate::layer2::follow_chain": "b86963632494fe991bd25c543e030e00369a0f238c743d0f0eb6fba5a4597116",
+    "crate::layer2::generate_relationships": "43a15a1e32f977a2a35edf5992ef43e1b9f946facaa35a86aaed98f644418a23",
+    "crate::layer2::is_keyword": "d839a0c885e33a73043634bb1e19a340c53e435fc82bb504ec55c0d5edd1c45d",
+    "crate::layer3::IndexEntry": "e19632be6cba06c7dc9d1017f8262a5ed93b6c903bb49de8439c87e54b07f325",
+    "crate::layer3::collect_index_entries": "12560d091343e580620ef71cd4eccc7c634a4a8b068b55fcfd8e03c4e211c5f5",
+    "crate::layer3::generate_index": "6fb2e0fdc1089953664b6a662431d5c5283a03060d158e9a63e5c98358883bd8",
+    "crate::layer3::item_full_path": "0530afc0b9b1d18c3a99608c11efd4405195eba8a12d83752af7eac9b0d42046",
+    "crate::main": "b143f740d23e07707a7349926b7ba8b8573120fc52b8ee379618db1cb21a2573",
+    "crate::metadata::CrateMetadata": "f9c6bafa2d21a7e2d7c30f157cf3716fab0699de942aa8f85a7e223b566a4d84",
+    "crate::metadata::convert_visibility": "7cb02656157a20e039aad5601fbd959fc7cffda41a7a936314a4b1b48422bd23",
+    "crate::metadata::resolve_crates": "99fbcb42724c785553f965ab755c18e3461f09a724dc8e213b36b5b23af64042",
+    "crate::model::CrateInfo": "4051e13e4af3664aacf913f6be1e1e23e8ad08711dec569f0bd5fc1b979f166e",
+    "crate::model::CrateKind": "cdb9f4753a404e17c9f88594fd426492e2f7befc6425098474303ebd4585bb5b",
+    "crate::model::Item": "45d431e95ecb12b0229073cb3c83bc4f197751aadc602e551b7c42beed19ce3a",
+    "crate::model::ItemKind": "a4bae8f0a406fedbe67acd2a1399a7cdc91375abd3f5cb10bd253383076fdb92",
+    "crate::model::Module": "5b1ac13b1a29f6692aa7aaf5ba217cf6bc7413a60d990991412b1850385e524d",
+    "crate::model::Visibility": "7597922248d5552e300f6454ceee2b8e0534625eee82a253439452603166d361",
+    "crate::model::std :: fmt :: Display for CrateKind": "09a602c2c3b563ef6d6ae7d9b81b07ad828d75192dcbce49afaa518c31f5217b",
+    "crate::model::std :: fmt :: Display for ItemKind": "a2c7cc372d91a7baaf42748c0faff65c33f137b48ee2182afa4e87ff0d8fe37b",
+    "crate::model::std :: fmt :: Display for Visibility": "2f9bd1013cd9e8bc11ecf315b7436b06e551c596f14e02a4d8ee131ccca6a461",
+    "crate::output::code_block": "fd2a0db5a4a3ae10dd5cf896ebfd29f276c438aa83285db32ea89c781d2409dd",
+    "crate::output::display_module_path": "1a2024eb25454558c1d087a083b4eb444e1834c527e5e7dc6c51c684e8fa8d38",
+    "crate::output::indent": "2933d82a3c41278b9b34265848b574594dc6f41ae2ac6f27c04825f1dc9a1ebb",
+    "crate::output::tree_entry": "4c33ef56284732d522e09d861684e4b4d921aa067460c588a0ccd77f7e33da71",
+    "crate::output::truncate": "452dfa6171a181c764045881f831c65f0441515578ae445dc44929c411790172",
+    "crate::parse::collect_use_paths": "df2c361441333eb60b733413539492416a4198c63af43842dba3a46b89e342b3",
+    "crate::parse::collect_use_tree_paths": "08c16446bcd520ab2232a8c211b265dcb361ba054242696234d55177b15c07b9",
+    "crate::parse::enum_signature": "a86dd8c76ca0877eff7ab95323e5587f8897db89e009289a3b8991994bc5b416",
+    "crate::parse::extract_doc_comment": "5482887e49fbe604307b729d93945fbbbe7ad1792f20678830adbb01ffabcdcd",
+    "crate::parse::extract_inner_doc_comment": "b08d27e8fc4034d1e7a9c755337f26e1d34705034141e9d6718964cac5dce257",
+    "crate::parse::extract_items": "97bbed20c9434c8d4d63893beb3ba327da90385a239622fabde2518d8af24306",
+    "crate::parse::fn_signature": "babf6a4e198095860caf3ba106dc302a2206c542047d9d91769bdb703881d861",
+    "crate::parse::hash_file_contents": "c651b016374471a032ad6d12381ab363d32d8fb5bdc5855a23f42677c0351abb",
+    "crate::parse::hash_item_source": "a3522b1c308a7171a326050b25f3af79258420a6c66cae79c0f5817b62a69a97",
+    "crate::parse::impl_method_signature": "3202a4467506c1c6a6848f2cf2f643051065bae2e5aba231696cc9d85764abf7",
+    "crate::parse::impl_signature": "1dee80fb9543391f555ada036405303fc0169856738bedd002c961928496f22f",
+    "crate::parse::parse_file": "f80d9c8a5398d16b3b2056d76841f280f895b5f5c0533ef191a022b719cf05cf",
+    "crate::parse::parse_use_statements": "870d16e539ee3e4cc1d0063f3ef55e3faa5112e20fe4a51e5ffce250551a0922",
+    "crate::parse::span_lines": "977388687c2d48aac8a3bf190b4c431b52b1fe143203d320ca49c691c2a8bdc5",
+    "crate::parse::struct_signature": "97b2889b8e97cd2bb1449afc127ed198dc0f79aecb7d271e5b239970f8646408",
+    "crate::parse::trait_method_signature": "f3002d485841bbf2e9567926246257caf018a4496c3834d6d35aeeca0f602255",
+    "crate::parse::trait_signature": "935f8b2426d13998b089842b0f38fcedc47c983c2de8229f533e591d1bbcc000",
+    "crate::parse::use_tree_name": "133d1bf7fb390c957f2f9647da45590cc8628f21a29ce78d4a3eb594face9fc4",
+    "crate::parse::visibility_prefix": "0a6d98205a2d816bddfebfcf7c6a0d5db05180d82f642846b32c0a955f239ac9",
+    "crate::resolve::extract_inline_module_items": "79dcfeba46867c11aab9952f327ffbd1127cb1edd65212e137ff80dafca98cf5",
+    "crate::resolve::get_path_attribute": "2007f082bd139ef523fcc07ee11f6f23cb666b92cd504f02b4fb74eaf04f03b0",
+    "crate::resolve::is_cfg_test": "8503107222e091a1a9fec5ae8598988f9cbd36bd9f9e2482e32b2714e9d419cd",
+    "crate::resolve::resolve_mod_file": "de2cbe128f701806eab330bbf8c27d2e0876d96fb53f2df6b36764250e796b35",
+    "crate::resolve::resolve_module_tree": "3e175709ebacf516d30bbf5b3e53cd8a9e971ba2f86f7fbb86c2d03b5883ccc4",
+    "crate::resolve::resolve_submodules": "01f750f715cf48014b87b91b0c073173c1582b33f0faf865fd5709fee83a00bc",
+    "crate::run_annotate_export": "e1433881753f987ddb37a05400565d1d5e4c8db8e6e07672e038ddc6cf5c6ca6",
+    "crate::run_annotate_import": "859206e1fbb95e25e4c02c708285f5b31c9f35014b7b099631e122638c89a2b0",
+    "crate::run_generate": "6af625d5b3e0bc318464a9c55fad3e40f0ce26aec33aee5329f6e7f39febdbab"
+  }
+}
