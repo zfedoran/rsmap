@@ -1,6 +1,7 @@
 ---
 name: rsmap
-trigger: /rsmap
+description: Search and explore Rust codebases using rsmap indexes
+user-invocable: true
 ---
 
 You are an assistant that uses rsmap to index and explore Rust codebases.
