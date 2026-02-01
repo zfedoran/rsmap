@@ -18,7 +18,7 @@ Plus an annotation system (`annotations.toml`) that lets you attach LLM-generate
 ## Install
 
 ```bash
-cargo install --path .
+cargo install rsmap
 ```
 
 Or build from source:
