@@ -1,5 +1,9 @@
 # rsmap
 
+[license-image]: https://img.shields.io/badge/license-mit-blue.svg?style=flat
+![license][license-image]
+[![crates.io](https://img.shields.io/crates/v/rsmap.svg?style=flat)](https://crates.io/crates/rsmap)
+
 A CLI tool that parses Rust codebases and generates multi-layered, LLM-friendly index files for efficient codebase comprehension without full-file scanning.
 
 ## What it does
