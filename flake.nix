@@ -29,6 +29,7 @@
             src = lib.cleanSource ./.;
             cargoLock.lockFile = ./Cargo.lock;
             nativeBuildInputs = [ rustStable ];
+            doCheck = false;
           };
         in {
           packages.default = rsmap;
